@@ -1,11 +1,13 @@
 import React from "react";
+import Link from 'next/link';
 
 const Footer = () => {
   return (
-    <footer className="footer footer-horizontal footer-center bg-base-200 text-base-content rounded p-10">
+    <footer className="flex flex-col items-center justify-center bg-gray-100 py-6">
       <nav className="grid grid-flow-col gap-4">
-        <a className="link link-hover">About us</a>
-        <a className="link link-hover">Contact</a>
+        <Link href="/about" className="link link-hover">About us</Link>
+        <Link href="/profile" className="link link-hover">Profile</Link>
+        <Link href="/contact" className="link link-hover">Contact</Link>
       </nav>
       <nav>
         <div className="grid grid-flow-col gap-4">
@@ -45,7 +47,7 @@ const Footer = () => {
         </div>
       </nav>
       <aside>
-        <p>
+        <p className="text-2xl">
           Copyright © {new Date().getFullYear()} - All right reserved name,
           name, name, name, and name.
         </p>
