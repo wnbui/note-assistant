@@ -13,6 +13,12 @@ export default function NavBar() {
                 <Link href="/" className="btn btn-ghost text-2xl font-bold text-gray-900">
                     Note Assistant
                 </Link>
+                <Link href="/contact" className="btn btn-ghost text-gray-700">
+                    Contact
+                </Link>
+                <Link href="/faq" className="btn btn-ghost text-gray-700">
+                    FAQ
+                </Link>
             </div>
             <div className="flex-none gap-2">
                 {session ? (
@@ -37,6 +43,11 @@ export default function NavBar() {
                                     <a className="justify-between">
                                         {session.user?.email}
                                     </a>
+                                </li>
+                                <li>
+                                    <Link href="/profile">
+                                        Profile
+                                    </Link>
                                 </li>
                                 <li>
                                     <button onClick={() => signOut({ callbackUrl: '/' })}>
