@@ -8,9 +8,9 @@ export default function NavBar() {
     const { data: session } = useSession();
 
     return (
-        <div className="navbar bg-base-100 shadow-md">
+        <div className="navbar bg-base-100 shadow-md px-6 py-4 sticky top-0 z-50">
             <div className="flex-1">
-                <Link href="/" className="btn btn-ghost text-xl">
+                <Link href="/" className="btn btn-ghost text-2xl font-bold text-gray-900">
                     Note Assistant
                 </Link>
             </div>
@@ -48,7 +48,7 @@ export default function NavBar() {
                     </>
                 ) : (
                     <button
-                        className="btn btn-primary"
+                        className="btn btn-primary bg-primary rounded-lg shadow hover:bg-primary-focus"
                         onClick={() => signIn('cognito')}
                     >
                         Sign In

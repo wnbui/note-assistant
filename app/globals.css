@@ -2,3 +2,24 @@
 @plugin "daisyui" {
   themes: light --default;
 };
+
+body {
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  font-family: 'Inter', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  margin: 0 0 1em 0;
+  padding: 0;
+}
