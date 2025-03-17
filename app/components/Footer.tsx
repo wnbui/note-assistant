@@ -47,9 +47,9 @@ const Footer = () => {
         </div>
       </nav>
       <aside>
-        <p className="text-2xl">
-          Copyright © {new Date().getFullYear()} - All right reserved name,
-          name, name, name, and name.
+        <p>Copyright © {new Date().getFullYear()} - All right reserved</p>
+        <p>
+          Amir Valiulla, Daniel Palomera, Guido Asbun, Vincent Lee, Will Bui
         </p>
       </aside>
     </footer>
