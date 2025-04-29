@@ -44,12 +44,12 @@ const Footer = () => {
           </a>
         </div>
       </nav>
-      <aside>
+      <div>
         <p>Copyright © {new Date().getFullYear()} - All right reserved</p>
         <p>
           Amir Valiulla, Daniel Palomera, Guido Asbun, Vincent Lee, Will Bui
         </p>
-      </aside>
+      </div>
     </footer>
   );
 };
