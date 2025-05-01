@@ -18,7 +18,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="bg-base-200 px-50">
+      <div className="bg-base-200">
         <Footer />
       </div>
     </div>
