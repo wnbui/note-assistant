@@ -13,12 +13,41 @@ export default function NavBar() {
                 <Link href="/" className="text-2xl font-extrabold text-gray-900 hover:text-primary transition duration-300">
                     Note Assistant
                 </Link>
-                <Link href="/contact" className="text-gray-600 hover:text-gray-900 transition duration-300 px-3 py-2 rounded-lg hover:bg-gray-100">
-                    Contact
-                </Link>
-                <Link href="/faq" className="text-gray-600 hover:text-gray-900 transition duration-300 px-3 py-2 rounded-lg hover:bg-gray-100">
-                    FAQ
-                </Link>
+                {/* Mobile dropdown menu */}
+                <div className="dropdown sm:hidden">
+                    <label tabIndex={0} className="btn btn-ghost">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            className="h-5 w-5"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke="currentColor"
+                        >
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </label>
+                    <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow-lg bg-white rounded-box w-52 border border-gray-200">
+                        <li><Link href="/contact">Contact</Link></li>
+                        <li><Link href="/faq">FAQ</Link></li>
+                        {session ? (
+                            <li><Link href="/AIassistant">AI Assistant</Link></li>
+                        ) : null}
+                    </ul>
+                </div>
+                {/* Desktop inline menu */}
+                <div className="hidden sm:flex gap-2">
+                    <Link href="/contact" className="text-gray-600 hover:text-gray-900 transition duration-300 px-3 py-2 rounded-lg hover:bg-gray-100">
+                        Contact
+                    </Link>
+                    <Link href="/faq" className="text-gray-600 hover:text-gray-900 transition duration-300 px-3 py-2 rounded-lg hover:bg-gray-100">
+                        FAQ
+                    </Link>
+                    {session ? (
+                        <Link href="/AIassistant" className="text-gray-600 hover:text-gray-900 transition duration-300 px-3 py-2 rounded-lg hover:bg-gray-100">
+                            AI Assistant
+                        </Link>
+                    ) : null}
+                </div>
             </div>
             <div className="flex-none gap-2">
                 {session ? (
