@@ -25,12 +25,15 @@ note-assistant/
 1. Navigate to the `infra` directory:
    ```bash
    cd infra
-Initialize Terraform:
-terraform init
-Apply the configuration:
-terraform apply
-Confirm the action when prompted.
-Additional Notes
+
+2. Initialize Terraform:
+   ```bash
+   terraform init
+   
+3. Apply Terraform:
+   ```bash
+   terraform apply
+
 
 This setup assumes your AWS CLI is configured with valid credentials (aws configure).
 The EC2 instance is expected to run a Next.js application on port 3000.
