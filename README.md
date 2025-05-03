@@ -13,7 +13,9 @@ This folder (`infra/`) contains the Terraform configuration used to deploy the N
 ## Folder Structure
 
 note-assistant/
+
 └── infra/
+
 ├── main.tf
 └── variables.tf
 
