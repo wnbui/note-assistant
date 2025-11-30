@@ -1,13 +1,19 @@
 import React from "react";
-import Link from 'next/link';
+import Link from "next/link";
 
 const Footer = () => {
   return (
     <footer className="flex flex-col items-center justify-center bg-gray-100 py-6">
       <nav className="grid grid-flow-col gap-4">
-        <Link href="/about" className="link link-hover">About us</Link>
-        <Link href="/profile" className="link link-hover">Profile</Link>
-        <Link href="/contact" className="link link-hover">Contact</Link>
+        <Link href="/about" className="link link-hover">
+          About us
+        </Link>
+        <Link href="/profile" className="link link-hover">
+          Profile
+        </Link>
+        <Link href="/contact" className="link link-hover">
+          Contact
+        </Link>
       </nav>
       <nav>
         <div className="grid grid-flow-col gap-4">
@@ -48,9 +54,7 @@ const Footer = () => {
       </nav>
       <div>
         <p>Copyright © {new Date().getFullYear()} - All right reserved</p>
-        <p>
-          Amir Valiulla, Daniel Palomera, Guido Asbun, Vincent Lee, Will Bui
-        </p>
+        <p>Will Bui, Nathan Chamorro, Helen Truong</p>
       </div>
     </footer>
   );
